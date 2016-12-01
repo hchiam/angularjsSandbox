@@ -6,7 +6,7 @@ AngularJS is an open-source JavaScript framework developed by Google.
 # tutorial 1:
 http://tutorialzine.com/2013/08/learn-angularjs-5-examples/
 
-# nagivation-menu example:
+## nagivation-menu example:
 For example code:  angularjs-examples --> navigation-menu --> index.html:
 
 The minimum you really need to look at is in the "index.html" file.  The "style.css" file is just for aesthetics.
@@ -40,7 +40,7 @@ And then with all of the above you can make a click on an element cause an actio
     ng-hide="active"
     ng-show="active"
 
-# inline-editor example:
+## inline-editor example:
 The following is another AngularJS directive ("property") that works like a JS function too, but can use a $scope object's properties as variables:
 
     ng-controller
