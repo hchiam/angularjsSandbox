@@ -15,7 +15,7 @@ The following are the real key parts of the "navigation-menu" example:
 To use Angular.js:
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 
-And also (note the "ng-" prefix):
+And also (note the "ng-" prefix used for what Angular calls "directives" and work just like special properties that you put inside element tags):
     <body ng-app>
 
 You can also add these properties into element tags:
