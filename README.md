@@ -3,6 +3,18 @@ My Angular.js sandbox.
 
 AngularJS is an open-source JavaScript framework developed by Google.
 
+AngularJS extends HTML with ng-directives.
+
+import AngularJS like this: <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+ng-app = makes the element and its sub-elements into an AngularJS application.
+
+ng-model = binds the element (input, select, textarea) --> to application data (variables).
+
+ng-bind = binds application data (variables) --> to the element (e.g. innerHTML of p, h1, etc.).
+
+ng-init = initializes variables.
+
 # tutorial 1:
 http://tutorialzine.com/2013/08/learn-angularjs-5-examples/
 
