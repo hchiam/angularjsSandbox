@@ -62,10 +62,24 @@ You need to put this inside the surrounding tag to be able to use the AngularJS 
 
     ng-app
 
+Like this:
+
+    <div ng-app>
+        ...
+    </div>
+
 You can then name a variable and assign it to an `input` element:
 
     ng-model="name"
 
+Like this:
+
+    <input ng-model="name">
+
 And you can then have that variable automatically "outputted" to wherever "placeholders" with its name are, like inside an `h1` element's text (it updates automatically as you type in the `input` element's input'):
 
     {{name}}
+
+Like this:
+
+    <h1>Hello {{name}}</h1>
