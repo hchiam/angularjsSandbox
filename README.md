@@ -15,7 +15,7 @@ ng-bind = AUTOMATICALLY binds application data (variables) --> to the element (e
 
 ng-init = initializes variables.
 
-{{expression}} = AUTOMATICALLY evaluates the variable or expression and outputs it directly (e.g. into the innerHTML of a p element), working just like ng-bind.
+{{expression}} = AUTOMATICALLY evaluates the variable or expression and outputs it directly (e.g. into the innerHTML of a p element, or in style="color:{{colourVariable}}"), working like ng-bind.
 
 # tutorial 1:
 http://tutorialzine.com/2013/08/learn-angularjs-5-examples/
