@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    </head>
+    <body ng-app="myApp">
+        
+        <table ng-controller="myController" border="1">
+            <tr>
+                <th>Shape</th>
+                <th>Sides</th>
+            </tr>
+            <tr ng-repeat="entry in records" align="center">
+                <td>{{entry.Shape}}</td>
+                <td>{{entry.Sides}}</td>  
+            </tr>
+        </table>
+        
+        <script>
+            var app = angular.module("myApp", []);
+            app.controller("myController", function($scope) {
+                $scope.records = [
+                    {
+                        "Shape" : "Triangle",
+                        "Sides" : "3"
+                    },
+                    {
+                        "Shape" : "Square",
+                        "Sides" : "4"
+                    },
+                    {
+                        "Shape" : "Pentagon",
+                        "Sides" : "5"
+                    },
+                    {
+                        "Shape" : "Circle",
+                        "Sides" : "1? 0? Infinite?"
+                    }
+                ];
+            });
+        </script>
+        
+    </body>
+</html>

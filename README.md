@@ -3,19 +3,23 @@ My Angular.js sandbox.
 
 AngularJS is an open-source JavaScript framework developed by Google.
 
-AngularJS extends HTML with ng-directives.
+AngularJS extends HTML with ng-directives to make HTML pages more DYNAMIC.
 
 import AngularJS like this: <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 
-ng-app = makes the element and its sub-elements into an AngularJS application.
+ng-app = makes the element and its sub-elements into an AngularJS application.  Make sure to put this attribute in the element that encloses the respective elements.
 
-ng-model = AUTOMATICALLY binds the element (input, select, textarea) --> to application data (variables).
+ng-controller = name of controller that contains "variables" (like `$scope`) and "functions" (like `$scope.addEntry = function (){};`) that act on the "variables".  Make sure to put this attribute in the element that encloses the respective elements.
+
+ng-model = AUTOMATICALLY binds the element (input, select, textarea) <--> to application data (variables).  (Can work in both directions.)
 
 ng-bind = AUTOMATICALLY binds application data (variables) --> to the element (e.g. innerHTML of p, h1, etc.).
 
 ng-init = initializes variables.
 
 {{expression}} = AUTOMATICALLY evaluates the variable or expression and outputs it directly (e.g. into the innerHTML of a p element, or in style="color:{{colourVariable}}"), working like ng-bind.
+
+ng-repeat = can be used to display a list of elements DYNAMICALLY.
 
 # tutorial 1:
 http://tutorialzine.com/2013/08/learn-angularjs-5-examples/
