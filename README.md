@@ -101,3 +101,7 @@ And you can then have that variable automatically "outputted" to wherever "place
 Like this:
 
     <h1>Hello {{name}}</h1>
+
+# tutorial 3:
+http://stephanebegaudeau.tumblr.com/post/48776908163/everything-you-need-to-understand-to-start-with
+More interesting info on AngularJS.
