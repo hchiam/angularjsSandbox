@@ -103,5 +103,8 @@ Like this:
     <h1>Hello {{name}}</h1>
 
 # tutorial 3:
+https://www.codecademy.com/learn/learn-angularjs
+
+# tutorial 4:
 http://stephanebegaudeau.tumblr.com/post/48776908163/everything-you-need-to-understand-to-start-with
 More interesting info on AngularJS.
