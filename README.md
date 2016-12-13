@@ -151,15 +151,13 @@ Something cool you can do with that output view variable:  you can add filters! 
 
     <p class="price">{{product.price|currency}}</p>
 
-And then you can show all items in a list of variables:  For example, this code tries to access all the properties listed (JSON-style) for each product in the products variable:  
+And then you can show all items in a list of variables:  For example, this code uses `ng-repeat` to try to access all the properties listed (JSON-style) for each product in the products variable:  
 
-    <div ng-repeat="product in products" class="col-md-6"> 
-        <div class="thumbnail"> 
-        <img src="img/the-book-of-trees.jpg"> 
-        <p class="title">{{ product.name | uppercase }}</p> 
-        <p class="price">{{ product.price | currency }}</p> 
-        <p class="date">{{ product.pubdate | date }}</p> 
-        </div> 
+    <div ng-repeat="product in products">
+        <img ng-src="{{ product.cover }}">
+        <p class="title">{{ product.name | uppercase }}</p>
+        <p class="price">{{ product.price | currency }}</p>
+        <p class="date">{{ product.pubdate | date }}</p>
     </div>
 
 ...and here's the prodcust variable, with each product and their respective properties listed (JSON-style):  
