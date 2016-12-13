@@ -21,9 +21,11 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: 'My Favourite Book'
+      //turns out you don't need to include all properties! the ng-repeat doesn't show something weird like "null"!
     },
     {
       name: 'My Other Favourite Book'
+      //turns out you don't need to include all properties! the ng-repeat doesn't show something weird like "null"!
     }
   ];
 }]);
