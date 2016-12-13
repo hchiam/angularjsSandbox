@@ -5,7 +5,7 @@ AngularJS is an open-source JavaScript framework developed by Google.
 
 AngularJS extends HTML with ng-directives to make HTML pages more DYNAMIC.
 
-[Skip to "Seven Steps to Make an AngularJS App"](#Seven Steps to Make an AngularJS App)
+[Skip to "Seven Steps to Make an AngularJS App"](##seven-steps-to-make-an-angularjs-app)
 
 import AngularJS like this:
 
@@ -109,7 +109,7 @@ Like this:
 # tutorial 3:
 https://www.codecademy.com/learn/learn-angularjs
 
-#Seven Steps to Make an AngularJS App:
+##Seven Steps to Make an AngularJS App:
 
 1. INCLUDE AngularJS:  include AngularJS script in HTML:  
 
