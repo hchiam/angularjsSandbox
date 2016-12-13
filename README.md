@@ -111,7 +111,7 @@ https://www.codecademy.com/learn/learn-angularjs
 
 ##Seven Steps to Make an AngularJS App:
 
-1. INCLUDE AngularJS:  include AngularJS script in HTML:  
+1. INCLUDE **AngularJS:  include AngularJS script in HTML:  
 
     `<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>`
 
@@ -119,7 +119,7 @@ https://www.codecademy.com/learn/learn-angularjs
 
     `var app = angular.module("myApp", []);`
 
-3. USE MODULE:  link section of HTML to that module in JS:
+3. USE **MODULE**:  link section of HTML to that module in JS:
 
     `<body ng-app="myApp">`
 
@@ -131,7 +131,7 @@ https://www.codecademy.com/learn/learn-angularjs
     }]);
     ```
 
-5. USE CONTROLLER:  link section of HTML file to that controller in JS:  
+5. USE **CONTROLLER**:  link section of HTML file to that controller in JS:  
 
     `<body ng-app="myApp" ng-controller="MainController">`
 
@@ -143,7 +143,7 @@ https://www.codecademy.com/learn/learn-angularjs
     }]);
     ```
 
-7. USE DATA:  link output view of HTML to that variable in JS:  
+7. USE **DATA**:  link output view of HTML to that variable in JS:  
 
     `<h1>{{title}}</h1>`
 
