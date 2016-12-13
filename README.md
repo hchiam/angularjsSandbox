@@ -160,7 +160,7 @@ And then you can show all items in a list of variables:  For example, this code 
         <p class="date">{{ product.pubdate | date }}</p>
     </div>
 
-...and here's the prodcust variable, with each product and their respective properties listed (JSON-style):  
+...and here's the products variable, with each product and their respective properties listed (JSON-style):  
 
     $scope.products = [
         {
