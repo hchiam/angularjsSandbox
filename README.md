@@ -106,16 +106,22 @@ Like this:
 https://www.codecademy.com/learn/learn-angularjs
 
 Six Steps to Make an AngularJS App:
+
 1. CREATE MODULE:  name module in JS:  `var app = angular.module("myApp", []);`
+
 2. USE MODULE:  link section of HTML to that module in JS:  `<body ng-app="myApp">`
+
 3. CREATE CONTROLLER:  name controller in JS:  
 `app.controller('MainController', ['$scope', function($scope) {
 }]);`
+
 4. USE CONTROLLER:  link section of HTML file to that controller in JS:  `<body ng-app="myApp" ng-controller="MainController">`
+
 5. CREATE DATA:  name variable (& set it) in controller in JS:  
 `app.controller('MainController', ['$scope', function($scope) { 
     $scope.title = 'Top Sellers in Books'; 
 }]);`
+
 6. USE DATA:  link output of HTML to that variable in JS:  `<h1>{{ title }}</h1>`
 
 # tutorial 4:
