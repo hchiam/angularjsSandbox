@@ -111,7 +111,7 @@ https://www.codecademy.com/learn/learn-angularjs
 
 ##Seven Steps to Make an AngularJS App:
 
-1. INCLUDE **AngularJS:  include AngularJS script in HTML:  
+1. INCLUDE **AngularJS**:  include AngularJS script in HTML:  
 
     `<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>`
 
