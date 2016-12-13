@@ -137,7 +137,7 @@ Six Steps to Make an AngularJS App:
 
 6. USE DATA:  link output view of HTML to that variable in JS:  
 
-    `<h1>{{ title }}</h1>`
+    `<h1>{{title}}</h1>`
 
 # tutorial 4:
 http://stephanebegaudeau.tumblr.com/post/48776908163/everything-you-need-to-understand-to-start-with
