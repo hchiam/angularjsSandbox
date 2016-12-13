@@ -139,9 +139,9 @@ Six Steps to Make an AngularJS App:
 
     `<h1>{{title}}</h1>`
 
-Something cool you can do with that output view variable:  you can add filters!  For example, this 'filters' the input number into a price format:
+Something cool you can do with that output view variable:  you can add filters!  For example, this 'filters' the input number `{{product.price}}` into a price format:
 
-    `<p class="price">{{product.price|currency}}</p>`
+    <p class="price">{{product.price|currency}}</p>
 
 # tutorial 4:
 http://stephanebegaudeau.tumblr.com/post/48776908163/everything-you-need-to-understand-to-start-with
