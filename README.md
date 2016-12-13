@@ -114,7 +114,7 @@ Six Steps to Make an AngularJS App:
 3. CREATE **CONTROLLER**:  name controller in JS:  
 
 `app.controller('MainController', ['$scope', function($scope) { 
-
+ 
 }]);`
 
 4. USE CONTROLLER:  link section of HTML file to that controller in JS:  `<body ng-app="myApp" ng-controller="MainController">`
@@ -122,9 +122,9 @@ Six Steps to Make an AngularJS App:
 5. CREATE **DATA**:  name variable (& set it) in controller in JS:  
 
 `app.controller('MainController', ['$scope', function($scope) { 
-
+ 
     $scope.title = 'Top Sellers in Books'; 
-
+ 
 }]);`
 
 6. USE DATA:  link output view of HTML to that variable in JS:  `<h1>{{ title }}</h1>`
