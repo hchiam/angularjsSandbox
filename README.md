@@ -1,6 +1,8 @@
 # angularjsSandbox
 My Angular.js sandbox.
 
+## description:
+
 AngularJS is an open-source JavaScript framework developed by Google.
 
 AngularJS extends HTML with ng-directives to make HTML pages more DYNAMIC.
@@ -11,21 +13,23 @@ import AngularJS like this:
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 
-The following are called directives, and all start with "ng-".  They trigger special behaviours that AngularJS gives to elements that these directives are found in:
+## directives:
 
-ng-app = makes the element and its sub-elements into an AngularJS application.  Make sure to put this attribute in the element that encloses the respective elements.
+The following are called **directives**, and all start with "ng-".  They trigger special behaviours that AngularJS gives to elements that these directives are found in:
 
-ng-controller = name of controller that contains "variables" (like `$scope`) and "functions" (like `$scope.addEntry = function (){};`) that act on the "variables".  Make sure to put this attribute in the element that encloses the respective elements.
+**ng-app** = makes the element and its sub-elements into an AngularJS application.  Make sure to put this attribute in the element that encloses the respective elements.
 
-ng-model = AUTOMATICALLY binds the element (input, select, textarea) <--> to application data (variables).  (Can work in both directions.)
+**ng-controller** = name of controller that contains "variables" (like `$scope`) and "functions" (like `$scope.addEntry = function (){};`) that act on the "variables".  Make sure to put this attribute in the element that encloses the respective elements.
 
-ng-bind = AUTOMATICALLY binds application data (variables) --> to the element (e.g. innerHTML of p, h1, etc.).
+**ng-model** = AUTOMATICALLY binds the element (input, select, textarea) <--> to application data (variables).  (Can work in both directions.)
 
-ng-init = initializes variables.
+**ng-bind** = AUTOMATICALLY binds application data (variables) --> to the element (e.g. innerHTML of p, h1, etc.).
 
-{{expression}} = AUTOMATICALLY evaluates the variable or expression and outputs it directly (e.g. into the innerHTML of a p element, or in style="color:{{colourVariable}}"), working like ng-bind.
+**ng-init** = initializes variables.
 
-ng-repeat = can be used to display a list of elements DYNAMICALLY.
+**{{expression}}** = AUTOMATICALLY evaluates the variable or expression and outputs it directly (e.g. into the innerHTML of a p element, or in style="color:{{colourVariable}}"), working like ng-bind.
+
+**ng-repeat** = can be used to display a list of elements DYNAMICALLY.
 
 # tutorial 1:
 http://tutorialzine.com/2013/08/learn-angularjs-5-examples/
