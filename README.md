@@ -11,6 +11,8 @@ import AngularJS like this:
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 
+The following are called directives, and all start with "ng-".  They trigger special behaviours that AngularJS gives to elements that these directives are found in:
+
 ng-app = makes the element and its sub-elements into an AngularJS application.  Make sure to put this attribute in the element that encloses the respective elements.
 
 ng-controller = name of controller that contains "variables" (like `$scope`) and "functions" (like `$scope.addEntry = function (){};`) that act on the "variables".  Make sure to put this attribute in the element that encloses the respective elements.
