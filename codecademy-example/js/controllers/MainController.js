@@ -18,6 +18,12 @@ app.controller('MainController', ['$scope', function($scope) {
       price: 8,
       pubdate: new Date('2013','08','01'),
       cover: 'img/program-or-be-programmed.jpg'
+    },
+    {
+      name: 'My Favourite Book'
+    },
+    {
+      name: 'My Other Favourite Book'
     }
   ];
 }]);
