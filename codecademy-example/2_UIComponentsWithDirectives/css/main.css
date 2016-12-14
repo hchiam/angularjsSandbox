@@ -49,7 +49,7 @@ body {
    width: 60px;
    height: 60px;
    position: absolute;
-   background: #fff;
+   background: lightgrey;
    border-bottom:5px solid #000;
    text-align: center;
 }
