@@ -5,7 +5,7 @@ My Angular.js sandbox.
 
 AngularJS is an open-source JavaScript framework developed by Google.
 
-AngularJS extends HTML with ng-directives to make HTML pages more DYNAMIC.
+AngularJS extends HTML with ng-directives to make HTML pages more DYNAMIC.  It enables updating of data without having to re-load the page!
 
 [Skip to "Seven Steps to Make an AngularJS App"](#seven-steps-to-make-an-angularjs-app)
 
