@@ -28,6 +28,7 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: 'My Favourite Book',
+      price: 0,
       //turns out you don't need to include all properties! the ng-repeat doesn't show something weird like "null"!
       likes: 0,
       dislikes: 0
