@@ -48,4 +48,5 @@ app.controller('MainController', ['$scope', function($scope) {
   $scope.minusOne = function(i){ // make sure the HTML element does this to get the products index: "plusOne($index)"
     $scope.products[i].dislikes += 1;
   };
+  
 }]);
