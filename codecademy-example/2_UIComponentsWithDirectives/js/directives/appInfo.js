@@ -10,5 +10,6 @@ app.directive('appInfo',function(){
             info: '=' // for example, here's an attribute named "info", and with '=' we should expect: <app-info info="..."></app-info>
         },
         templateUrl: 'js/directives/appInfo.html' // templateUrl = (directory to) the HTML file to use as template
+         // make sure its "templateUrl" and NOT "templateURL"!!!
     };
 });
