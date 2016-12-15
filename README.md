@@ -3,7 +3,7 @@ My Angular.js sandbox.
 
 ## description:
 
-AngularJS is an open-source JavaScript framework developed by Google.
+AngularJS is an open-source JavaScript framework (not a library) developed by Google.  (your code calls a library ; your code is called/"read" by a framework for "interpretation" etc.)
 
 AngularJS extends HTML with ng-directives to make HTML pages more DYNAMIC.  It enables updating of data without having to re-load the page!
 
