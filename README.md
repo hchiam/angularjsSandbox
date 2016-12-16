@@ -182,3 +182,16 @@ And then you can show all items in a list of variables:  For example, this code 
             cover: 'img/program-or-be-programmed.jpg'
         }
     ];
+
+You can create a **SERVICE** to get **DATA** from a service, using `app.factory` in .js, such as this forecast example:  
+
+    app.factory('forecast', ['$http', function($http) {
+        return $http.get('https://s3.amazonaws.com/codecademy-content/courses/ltp4/forecast-api/forecast.json')
+            .success(function(data) {
+                return data;
+            })
+                .error(function(err) {
+                    return err;
+                });
+        }]
+    );
