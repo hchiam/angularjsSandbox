@@ -200,6 +200,6 @@ You can create a **SERVICE** ("http://..") to get **DATA** (".json") from a serv
 
     app.controller('MainController', ['$scope', 'forecast', function($scope, forecast) {
         forecast.success(function(data) {
-            $scope.fiveDay = data;
+            $scope.forecastFiveDay = data;
         });
     }]);
