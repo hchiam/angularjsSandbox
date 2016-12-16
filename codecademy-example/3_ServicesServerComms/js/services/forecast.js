@@ -7,5 +7,4 @@ app.factory('forecast', ['$http', function($http) {
             .error(function(err) {
                 return err;
             });
-    }]
-);
+}]);

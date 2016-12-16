@@ -194,5 +194,4 @@ You can create a **SERVICE** ("http://..") to get **DATA** (".json") from a serv
                 .error(function(err) {
                     return err;
                 });
-        }]
-    );
+    }]);
