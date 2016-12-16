@@ -195,3 +195,11 @@ You can create a **SERVICE** ("http://..") to get **DATA** (".json") from a serv
                 return err; // if error
             });
     }]);
+
+...and then include in the HTML file and include in the controller (MainController.js):
+
+    app.controller('MainController', ['$scope', 'forecast', function($scope, forecast) {
+        forecast.success(function(data) {
+            $scope.fiveDay = data;
+        });
+    }]);
