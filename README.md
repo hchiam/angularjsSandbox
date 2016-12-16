@@ -182,7 +182,3 @@ And then you can show all items in a list of variables:  For example, this code 
             cover: 'img/program-or-be-programmed.jpg'
         }
     ];
-
-# tutorial 4:
-http://stephanebegaudeau.tumblr.com/post/48776908163/everything-you-need-to-understand-to-start-with
-More interesting info on AngularJS.
