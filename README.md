@@ -183,9 +183,10 @@ And then you can show all items in a list of variables:  For example, this code 
         }
     ];
 
-You can create a **SERVICE** to get **DATA** from a service, using `app.factory` in .js, such as this forecast example:  
+You can create a **SERVICE** ("http://..") to get **DATA** (".json") from a service, using `app.factory` in .js, such as this forecast example:  
 
     app.factory('forecast', ['$http', function($http) {
+        // call a url ("https://...") to get data (".json")
         return $http.get('https://s3.amazonaws.com/codecademy-content/courses/ltp4/forecast-api/forecast.json')
             .success(function(data) {
                 return data;
