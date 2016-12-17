@@ -153,7 +153,7 @@ https://www.codecademy.com/learn/learn-angularjs
 
     `<h1>{{title}}</h1>`
 
-Something cool you can do with that output view variable:  you can add filters!  For example, this 'filters' the input number `{{product.price}}` into a price format:
+Something cool you can do with that output view variable:  you can add **FILTERS**!  For example, this 'filters' the input number `{{product.price}}` into a price format:
 
     <p class="price">{{product.price|currency}}</p>
 
@@ -183,6 +183,31 @@ And then you can show all items in a list of variables:  For example, this code 
         }
     ];
 
+**DIRECTIVES** can be used to create custom elements (and sub-elements), like this in HTML:
+
+    <app-info info="app"></app-info>
+
+...referring to this directive in JS:
+
+    app.directive('appInfo',function(){
+        return {
+            restrict: 'E', // restrict = how the element/directive will be used ; 'E' = as a new HTML element
+            scope: { // scope = means we will pass info into this element/directive, such as attributes
+                info: '=' // for example, here's an attribute named "info", and with '=' we should expect: <app-info info="..."></app-info>
+            },
+            templateUrl: 'js/directives/appInfo.html' // templateUrl = (directory to) the HTML file to use as template
+             // make sure its "templateUrl" and NOT "templateURL"!!!
+        };
+    });
+
+...which uses this template HTML (sub-)elements:
+
+    <!--This is the template that is referenced in appInfo.js with the "templateUrl".-->
+    <img class="icon" ng-src="{{ info.icon }}"> 
+    <h2 class="title">{{ info.title }}</h2> 
+    <p class="developer">{{ info.developer }}</p> 
+    <p class="price">{{ info.price | currency }}</p>
+
 You can create a **SERVICE** ("http://..") to get **DATA** (".json") from a service, using `app.factory` in .js, such as this forecast example:  
 
     app.factory('forecast', ['$http', function($http) {
@@ -196,7 +221,11 @@ You can create a **SERVICE** ("http://..") to get **DATA** (".json") from a serv
             });
     }]);
 
-...and then include in the HTML file and include in the controller (MainController.js):
+...and then you can include that service in the HTML file:
+
+    <script src="js/services/forecast.js"></script>
+
+...and finally include that service in the controller (MainController.js) to "abstract away" the data collection from the main controller:
 
     app.controller('MainController', ['$scope', 'forecast', function($scope, forecast) {
         forecast.success(function(data) {
