@@ -1,5 +1,5 @@
 # angularjsSandbox
-My Angular.js sandbox.
+My Angular.js sandbox.  Tutorials and modified code for future reference.
 
 ## description:
 
