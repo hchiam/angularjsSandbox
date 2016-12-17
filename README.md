@@ -232,3 +232,6 @@ You can create a **SERVICE** ("http://..") to get **DATA** (".json") from a serv
             $scope.forecastFiveDay = data;
         });
     }]);
+
+Use `ngRoute` to do **ROUTING**:  you can make a "single-page" app, but navigate different template pages (without reloading!), especially if you have tons of interactive data/info.
+
