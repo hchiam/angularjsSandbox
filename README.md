@@ -5,7 +5,7 @@ My Angular.js sandbox.  Tutorials and modified code for future reference.
 
 AngularJS is an open-source JavaScript framework (not a library) developed by Google.  (your code calls a library ; your code is called/"read" by a framework for "interpretation" etc.)
 
-AngularJS extends HTML with ng-directives to make HTML pages more DYNAMIC.  It enables updating of data without having to re-load the page!
+AngularJS extends HTML with ng-directives to make HTML pages more DYNAMIC.  It enables updating of data without having to re-load the page!  (I.e., it's good for single-page web apps.)
 
 [Skip to "Seven Steps to Make an AngularJS App"](#seven-steps-to-make-an-angularjs-app)
 
@@ -121,19 +121,19 @@ https://www.codecademy.com/learn/learn-angularjs
 
 ##Seven Steps to Make an AngularJS App:
 
-1. INCLUDE **AngularJS**:  include AngularJS script in HTML:  
+1. INCLUDE **AngularJS**:  include AngularJS script in HTML:  (SO YOU CAN USE ANGULAR JS)
 
     `<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>`
 
-2. CREATE **MODULE**:  name module in JS:
+2. CREATE **MODULE**:  name module in JS:  (TO NAME ONE OF THE ANGULAR JS MODULES YOU WANT TO USE)
 
     `var app = angular.module("myApp", []);`
 
-3. USE **MODULE**:  link section of HTML to that module in JS:
+3. USE **MODULE**:  link section of HTML to that module in JS:  (TO TELL THE APP WHICH PART USES WHICH ANGULAR JS MODULE)
 
     `<body ng-app="myApp">`
 
-4. CREATE **CONTROLLER**:  name controller in JS:  
+4. CREATE **CONTROLLER**:  name controller in JS:  (TO SETUP DATA)
 
     ```
     app.controller('MainController', ['$scope', function($scope) { 
@@ -141,11 +141,11 @@ https://www.codecademy.com/learn/learn-angularjs
     }]);
     ```
 
-5. USE **CONTROLLER**:  link section of HTML file to that controller in JS:  
+5. USE **CONTROLLER**:  link section of HTML file to that controller in JS:  (TO TELL THE APP THE NAME OF THE CONTROLLER TO GO WITH THE MODULE)
 
     `<body ng-app="myApp" ng-controller="MainController">`
 
-6. CREATE **DATA**:  name variable (& set it) in controller in JS:  
+6. CREATE **DATA**:  name variable (& set it) in controller in JS:  (TO CREATE DATA)
 
     ```
     app.controller('MainController', ['$scope', function($scope) {
@@ -153,7 +153,7 @@ https://www.codecademy.com/learn/learn-angularjs
     }]);
     ```
 
-7. USE **DATA**:  link output view of HTML to that variable in JS:  
+7. USE **DATA**:  link output view of HTML to that variable in JS:  (TO OUTPUT DATA)
 
     `<h1>{{title}}</h1>`
 
@@ -241,4 +241,16 @@ Use `ngRoute` to do **ROUTING**:  you can make a "single-page" app, but navigate
 
 # tutorial 4:
 http://stephanebegaudeau.tumblr.com/post/48776908163/everything-you-need-to-understand-to-start-with
-for futher reading
+for further reading.
+
+**ng-show**="...":  If equals true, then this element (and anything it encloses) is shown.  Example use:  automatically showing only search results with a property that matches a criteria.
+
+**ng-switch**="..." and **ng-switch-when**="...":  If the two values match, then the sub-element with the **...-when** tag is shown.  Example use:  showing an icon that matches the "clan" for each search result.
+
+**ng-model**:  Lets you bi-directionally bind data.  Example use:  put **ng-model** inside a textbox to edit a description in real time; the description text in a <p> and in the data update in real time automatically.
+
+**ng-app**:  Within your main page (typically named index.html), you can bind part of it to an AngularJS module using the property **ng-app** within the enclosing element.
+
+**ng-view**:  After using **ng-app**, you use **ng-view** to use partial views.  Works with **ngRoute** to "re-load" part of your page, i.e. replacing where **<... ng-view>** is found with other html code angular-styled.
+
+Module = app = container for controllers, directives, services, filters, even other modules, etc.
