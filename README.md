@@ -235,3 +235,6 @@ You can create a **SERVICE** ("http://..") to get **DATA** (".json") from a serv
 
 Use `ngRoute` to do **ROUTING**:  you can make a "single-page" app, but navigate different template pages (without reloading!), especially if you have tons of interactive data/info.
 
+# tutorial 4:
+http://stephanebegaudeau.tumblr.com/post/48776908163/everything-you-need-to-understand-to-start-with
+for futher reading
