@@ -16,7 +16,7 @@
 	</head>
 
 	<!-- Declare a new AngularJS app and associate the controller -->
-	<body ng-app ng-controller="OrderFormController">
+	<body data-ng-app data-ng-controller="OrderFormController">
 
 		<form>
 
@@ -25,7 +25,7 @@
 			<ul>
 				<!-- Loop through the services array, assign a click handler, and set or
 					remove the "active" css class if needed -->
-				<li ng-repeat="service in services" ng-click="toggleActive(service)" ng-class="{active:service.active}">
+				<li data-ng-repeat="service in services" data-ng-click="toggleActive(service)" data-ng-class="{active:service.active}">
 					<!-- Notice the use of the currency filter, it will format the price -->
 					{{service.name}} <span>{{service.price | currency}}</span>
 				</li>

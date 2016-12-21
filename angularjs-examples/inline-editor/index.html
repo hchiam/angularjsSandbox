@@ -16,24 +16,24 @@
 	</head>
 
 	<!-- Notice the controller directive -->
-	<body ng-app ng-controller="InlineEditorController">
+	<body data-ng-app data-ng-controller="InlineEditorController">
 
 		<!-- When this element is clicked, hide the tooltip -->
-		<div id="main" ng-click="hideTooltip()">
+		<div id="main" data-ng-click="hideTooltip()">
 
 			<!-- This is the tooltip. It is shown only when the showtooltip variable is truthful -->
-			<div class="tooltip" ng-click="$event.stopPropagation()" ng-show="showtooltip">
+			<div class="tooltip" data-ng-click="$event.stopPropagation()" data-ng-show="showtooltip">
 
 				<!-- ng-model binds the contents of the text field with the "value" model.
 					 Any changes to the text field will automatically update the value, and
 					 all other bindings on the page that depend on it.  -->
 
-				<input type="text" ng-model="value" />
+				<input type="text" data-ng-model="value" />
 			</div>
 
 			<!-- Call a method defined in the InlineEditorController that toggles
 			 the showtooltip varaible -->
-			<p ng-click="toggleTooltip($event)">{{value}}</p>
+			<p data-ng-click="toggleTooltip($event)">{{value}}</p>
 
 		</div>
 

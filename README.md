@@ -13,6 +13,10 @@ import AngularJS like this:
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 
+## side note:
+
+Use "data-ng-..." instead of "ng-..." so that any HTML validator program will accept these non-default attributes.
+
 ## directives:
 
 The following are called **directives**, and all start with "ng-".  They trigger special behaviours that AngularJS gives to elements that these directives are found in:

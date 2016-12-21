@@ -4,20 +4,20 @@
         <meta charset="utf-8"/>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     </head>
-    <body ng-app="myApp" ng-controller="myController">
+    <body data-ng-app="myApp" data-ng-controller="myController">
         
         <table border="1">
             <tr>
                 <th>Shape</th>
                 <th>Sides</th>
             </tr>
-            <tr ng-repeat="entry in records" align="center">
+            <tr data-ng-repeat="entry in records" align="center">
                 <td>{{entry.Shape}}</td>
                 <td>{{entry.Sides}}</td>  
             </tr>
         </table>
         
-        <button ng-click="addEntry()">Click To Add Entry</button>
+        <button data-ng-click="addEntry()">Click To Add Entry</button>
         
         <script>
             var app = angular.module("myApp", []);
