@@ -1,6 +1,10 @@
 My minimal example.
 
+The view:
+
     test.html
+
+The model and controller (could be separate files for modularity):
 
     test.js
 
