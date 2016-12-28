@@ -242,7 +242,7 @@ You can create a **SERVICE** ("http://..") to get **DATA** (".json") from a serv
         });
     }]);
 
-Use `ngRoute` to do **ROUTING**:  you can make a "single-page" app, but navigate different template pages (without reloading!), especially if you have tons of interactive data/info.
+Use `ngRoute` to do **ROUTING**:  you can make a "single-page" app, but navigate different template pages or "partial" pages (without reloading!), especially if you have tons of interactive data/info.  You can map URLs to controllers and template views (i.e. "partial pages" that can be used to replace wherever `<div ng-view></div>` is found in your index.html file).  As a bonus:  because the app now has URLs, users can bookmark and share the app's "pages" (which are actually just the same page with parts of it replaced with "partial pages" from templates filled with data---all without reloading the "actual" single page!).
 
 # tutorial 4:
 http://stephanebegaudeau.tumblr.com/post/48776908163/everything-you-need-to-understand-to-start-with
