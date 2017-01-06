@@ -147,8 +147,8 @@ https://www.codecademy.com/learn/learn-angularjs
 
 and
 
-    `<script src="myApp.js"></script>`
-    `<script src="MainController.js"></script>`
+    <script src="myApp.js"></script>
+    <script src="MainController.js"></script>
 
 6. CREATE **DATA**:  name variable (& set it) in controller in JS:  (TO CREATE DATA)
 
