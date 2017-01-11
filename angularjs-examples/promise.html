@@ -1,0 +1,47 @@
+<!-- Promises with AngularJS, based on Intelliware's post: -->
+<!-- http://i-proving.com/2014/05/29/how-to-use-promises-in-angularjs/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+  </head>
+  <body ng-app="myApp" ng-controller="AngularPromises">
+    <p>{{welcome}}</p>
+    <p>news.length = {{news.length}}</p>
+    <p>httpResponse.data.news = {{news}}</p>
+    <p>JSON.stringify(httpResponse) = {{httpresponsedata}}</p>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('AngularPromises', ['$scope', '$http', function($scope, $http) {
+            var signIn = function() {
+                return $http.post('http://validate.jsontest.com/?json={"key":"value"}');
+            };
+            var saveLocation = function() {
+                return $http.post('http://validate.jsontest.com/?json={"key":"value"}');
+            };
+            var getLatestNews = function() {
+                return $http.post('http://echo.jsontest.com/news/intelliware');
+            };
+            var refreshNewsList = function(httpResponse) {
+                $scope.news = httpResponse.data.news;
+                $scope.httpresponsedata = JSON.stringify(httpResponse);
+                return $scope.news;
+            };
+            var displayWelcomeMessage = function(news) {
+                $scope.welcome = 'You have ' + news.length + ' new messages.';
+            };
+            var errorHandler = function(err) {
+                alert('Error: ' + err);
+            };
+            
+            signIn()
+                .then(saveLocation)
+                .then(getLatestNews)
+                .then(refreshNewsList)
+                .then(displayWelcomeMessage)
+                .catch(errorHandler);
+        }]);
+    </script>
+  </body>
+</html>
