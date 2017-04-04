@@ -9,11 +9,8 @@ AngularJS extends HTML with ng-directives to make HTML pages more DYNAMIC.  It e
 
 Just want to see some examples running in your browser, now? 
 
-[https://codepen.io/hchiam/pen/QpPwOQ](https://codepen.io/hchiam/pen/QpPwOQ) 
-
-and 
-
-[https://codepen.io/hchiam/pen/vxMEdG](https://codepen.io/hchiam/pen/vxMEdG)
+ * [https://codepen.io/hchiam/pen/QpPwOQ](https://codepen.io/hchiam/pen/QpPwOQ) 
+ * [https://codepen.io/hchiam/pen/vxMEdG](https://codepen.io/hchiam/pen/vxMEdG)
 
 Just want to see a list of steps to use Angular? [Skip to "Seven Steps to Make an AngularJS App"](#seven-steps-to-make-an-angularjs-app)
 
