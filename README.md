@@ -7,7 +7,9 @@ AngularJS is an open-source JavaScript framework (not a library) developed by Go
 
 AngularJS extends HTML with ng-directives to make HTML pages more DYNAMIC.  It enables updating of data without having to re-load the page!  (I.e., it's good for single-page web apps.)
 
-[Skip to "Seven Steps to Make an AngularJS App"](#seven-steps-to-make-an-angularjs-app)
+Just want to see some examples running in your browser, now? [https://codepen.io/hchiam/pen/QpPwOQ](https://codepen.io/hchiam/pen/QpPwOQ) and [https://codepen.io/hchiam/pen/vxMEdG](https://codepen.io/hchiam/pen/vxMEdG)
+
+Just want to see a list of steps to use Angular? [Skip to "Seven Steps to Make an AngularJS App"](#seven-steps-to-make-an-angularjs-app)
 
 import AngularJS like this:
 
@@ -119,7 +121,7 @@ Like this:
 # tutorial 3:
 https://www.codecademy.com/learn/learn-angularjs
 
-##Seven Steps to Make an AngularJS App:
+# Seven Steps to Make an AngularJS App:
 
 1. INCLUDE **AngularJS**:  include AngularJS script in HTML:  (SO YOU CAN USE ANGULAR JS)
 
