@@ -1,6 +1,8 @@
 # Learning Angular.js
 Tutorials, modified code, and notes for future reference.
 
+Just one of the things I'm learning. https://github.com/hchiam/learning
+
 ## description:
 
 AngularJS is an open-source JavaScript framework (not a library) developed by Google.  (your code calls a library ; your code is called/"read" by a framework for "interpretation" etc.)
