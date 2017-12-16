@@ -9,9 +9,9 @@ AngularJS is an open-source JavaScript framework (not a library) developed by Go
 
 AngularJS extends HTML with ng-directives to make HTML pages more DYNAMIC.  It enables updating of data without having to re-load the page!  (I.e., it's good for single-page web apps.)
 
-Just want to see some examples running in your browser, now? 
+Just want to see some examples running in your browser, now?
 
- * [https://codepen.io/hchiam/pen/QpPwOQ](https://codepen.io/hchiam/pen/QpPwOQ) 
+ * [https://codepen.io/hchiam/pen/QpPwOQ](https://codepen.io/hchiam/pen/QpPwOQ)
  * [https://codepen.io/hchiam/pen/vxMEdG](https://codepen.io/hchiam/pen/vxMEdG)
 
 Just want to see a list of steps to use Angular? [Skip to "Seven Steps to Make an AngularJS App"](#seven-steps-to-make-an-angularjs-app)
@@ -143,8 +143,8 @@ https://www.codecademy.com/learn/learn-angularjs
 4. CREATE **CONTROLLER**:  name controller in JS:  (TO SETUP DATA)
 
     ```
-    app.controller('MainController', ['$scope', function($scope) { 
-    
+    app.controller('MainController', ['$scope', function($scope) {
+
     }]);
     ```
 
@@ -219,9 +219,9 @@ And then you can show all items in a list of variables:  For example, this code 
 ...which uses this template HTML (sub-)elements:
 
     <!--This is the template that is referenced in appInfo.js with the "templateUrl".-->
-    <img class="icon" ng-src="{{ info.icon }}"> 
-    <h2 class="title">{{ info.title }}</h2> 
-    <p class="developer">{{ info.developer }}</p> 
+    <img class="icon" ng-src="{{ info.icon }}">
+    <h2 class="title">{{ info.title }}</h2>
+    <p class="developer">{{ info.developer }}</p>
     <p class="price">{{ info.price | currency }}</p>
 
 You can create a **SERVICE** ("http://..") to get **DATA** (".json") from a service, using `app.factory` in .js, such as this forecast example:  
@@ -266,3 +266,7 @@ for further reading.
 **ng-view**:  After using **ng-app**, you use **ng-view** to use partial views.  Works with **ngRoute** to "re-load" part of your page, i.e. replacing where **<... ng-view>** is found with other html code angular-styled.
 
 Module = app = container for controllers, directives, services, filters, even other modules, etc.
+
+# Another Tutorial (Interactive):
+
+http://www.learn-angular.org/
