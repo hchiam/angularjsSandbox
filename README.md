@@ -274,3 +274,5 @@ http://www.learn-angular.org/
 # Latest:
 
 https://github.com/hchiam/test-todo-app-using-angular
+
+https://github.com/hchiam/learning-angular
